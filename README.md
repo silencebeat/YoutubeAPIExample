@@ -10,7 +10,7 @@ Project ini merupakan contoh rest API menggunakan library Retrofit 2.
 
 ## Authors
 
-* **Candra Triyadi a.k.a Silencebeat** - *Freelancer Android Programmer* - https://github.com/silencebeat
+* **Candra Triyadi a.k.a Silencebeat** - *Freelancer Android Programmer* - [My Profile on Linkedin](https://www.linkedin.com/in/candra-t-fahmi-089990114/)
 
 ## License
 
