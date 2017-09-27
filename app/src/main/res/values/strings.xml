@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Youtube API Example</string>
-    <string name="YOUTUBE_API_KEY">AIzaSyxxxxsuxxxxxxxxxxxxx</string> <!-- Your youtube API KEY-->
+    <string name="YOUTUBE_API_KEY">AIzaSyBjnxxxxxxx8xxxxxxxxxx</string> <!-- Your youtube API KEY-->
 </resources>
