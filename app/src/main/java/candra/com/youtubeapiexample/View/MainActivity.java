@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
@@ -51,12 +52,20 @@ public class MainActivity extends AppCompatActivity implements Observer{
     }
 
     void setListVideos(List<Item> items){
+
+        List<Item> newItems =  new ArrayList<>();
+        for (Item item: items){
+            if (item.getId().getVideoId() != null){
+                newItems.add(item);
+            }
+        }
+
         binding.progressbar.setVisibility(View.GONE);
         final LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         Adapter<Item, ListViewHolder> adapter;
 
-        adapter = new Adapter<Item, ListViewHolder>(R.layout.list_video, ListViewHolder.class, Item.class, items) {
+        adapter = new Adapter<Item, ListViewHolder>(R.layout.list_video, ListViewHolder.class, Item.class, newItems) {
             @Override
             protected void bindView(ListViewHolder holder, Item model, int position) {
                 holder.onBind(MainActivity.this, model);

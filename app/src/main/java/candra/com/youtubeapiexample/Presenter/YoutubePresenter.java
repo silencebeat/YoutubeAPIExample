@@ -33,7 +33,7 @@ public class YoutubePresenter extends Observable {
     public void getVideos(String channelID){
         Map<String, String> params = new HashMap<>();
         params.put("key", YOUTUBE_KEY);
-        params.put("part","snippet,id");
+        params.put("part","snippet");
         params.put("order","date");
         params.put("maxResults", "50");
         params.put("channelId", channelID);
